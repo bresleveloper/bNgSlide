@@ -22,14 +22,14 @@ a live example http://jsbin.com/jukogewobo/5/
 
 example for usage  (every "topLevel" in "data" has a "Children" member except one)
 
-&lt;menu ng-mouseleave=&#39;changeData({})&#39;&gt;
-	&lt;ul&gt;
-		&lt;li ng-repeat=&#39;topLevel in data&#39; ng-mouseenter=&#39;changeData(topLevel, $index)&#39; &gt;
-			&lt;a href=&#39;{{ topLevel.URL || &#39;#&#39; }}&#39;&gt;{{ topLevel.Label }}&lt;/a&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
+&lt;menu ng-mouseleave=&#39;changeData({})&#39;&gt;<br>
+	&lt;ul&gt;<br>
+		&lt;li ng-repeat=&#39;topLevel in data&#39; ng-mouseenter=&#39;changeData(topLevel, $index)&#39; &gt;<br>
+			&lt;a href=&#39;{{ topLevel.URL || &#39;#&#39; }}&#39;&gt;{{ topLevel.Label }}&lt;/a&gt;<br>
+		&lt;/li&gt;<br>
+	&lt;/ul&gt;<br><br>
 
-    &lt;div b-ng-slide=&#39;changeData&#39; b-delay=&#39;150&#39; b-time=&#39;250&#39; b-test=&#39;Children&#39; &gt;
-		&lt;!-- angular html --&gt;
-	&lt;/div&gt;
-&lt;/menu&gt;
+    <div b-ng-slide='changeData' b-delay='150' b-time='250' b-test='Children' >
+		<!-- angular html -->
+	</div>
+&lt;/menu&gt;<br>
